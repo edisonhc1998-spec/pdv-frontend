@@ -1,73 +1,27 @@
-# PDV - Sistema de Ponto de Venda (Back-end)
+# PDV - Sistema de Ponto de Venda (Front-end)
 
-API desenvolvida em Python com Flask para gerenciar produtos e vendas de um ponto de venda simples.
+Interface web desenvolvida em HTML, CSS e JavaScript puro para interagir com a API do PDV.
 
 ---
 
 ## Sobre o projeto
 
-Este sistema foi desenvolvido como MVP (Minimum Viable Product) de um PDV (Ponto de Venda).
-A API permite cadastrar produtos, controlar estoque e registrar vendas com múltiplos itens.
+Este é o front-end do sistema PDV (Ponto de Venda).
+A interface permite cadastrar produtos, visualizar o estoque,
+registrar vendas e consultar o histórico de vendas.
 
 ---
 
 ## Tecnologias utilizadas
 
-- Python 3
-- Flask
-- Flask-RestX (Swagger)
-- Flask-CORS
-- SQLite (banco de dados)
+- HTML5
+- CSS3 (estilos personalizados)
+- JavaScript puro (sem frameworks)
+- Bootstrap 5 (layout)
 
 ---
 
 ## Estrutura do projeto
-pdv-backend/
-├── app.py       → código principal da API
-└── pdv.db       → banco de dados (criado automaticamente)
-
----
-
-## Como instalar e rodar
-
-### 1. Certifique-se de ter o Python instalado
-python --version
-
-### 2. Instale as dependências
-pip install flask flask-restx flask-cors
-
-### 3. Rode o servidor
-python app.py
-
-### 4. Acesse a documentação Swagger
-
-Abra o navegador e acesse:
-http://127.0.0.1:5000/swagger
-
----
-
-## Rotas disponíveis
-
-| Método | Rota | Descrição |
-|---|---|---|
-| GET | /produtos/ | Lista todos os produtos |
-| POST | /produtos/ | Cadastra um novo produto |
-| GET | /produtos/{id} | Busca um produto pelo ID |
-| DELETE | /produtos/{id} | Remove um produto pelo ID |
-| GET | /vendas/ | Lista todas as vendas |
-| POST | /vendas/ | Registra uma nova venda |
-| GET | /vendas/{id} | Busca os detalhes de uma venda |
-
----
-
-## Banco de dados
-
-O banco de dados SQLite é criado automaticamente ao rodar o servidor pela primeira vez.
-Três tabelas são criadas:
-
-- **produtos** → armazena os produtos cadastrados
-- **vendas** → registra cada venda realizada
-- **itens_venda** → detalha os produtos de cada venda
 pdv-frontend/
 ├── index.html   → estrutura da página
 ├── styles.css   → estilos personalizados
