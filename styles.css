@@ -1,0 +1,179 @@
+/* =============================================
+   ESTILOS PERSONALIZADOS DO PDV
+   Esse arquivo controla a aparência visual da página
+   O Bootstrap cuida do layout básico, e aqui
+   adicionamos nossa identidade visual própria
+============================================= */
+
+
+/* =============================================
+   CORPO DA PÁGINA
+   Define a cor de fundo e a fonte padrão
+   que serão usados em toda a página
+============================================= */
+body {
+    background-color: #f0f2f5; /* cinza claro de fundo */
+    font-family: Arial, sans-serif; /* fonte simples e legível */
+}
+
+
+/* =============================================
+   CABEÇALHO
+   Barra escura no topo com o nome do sistema
+============================================= */
+.cabecalho {
+    background-color: #2c3e50; /* azul escuro */
+    color: white;              /* texto branco */
+    padding: 20px;             /* espaçamento interno */
+    text-align: center;        /* centraliza o texto */
+    margin-bottom: 30px;       /* espaço abaixo do cabeçalho */
+}
+
+.cabecalho h1 {
+    font-size: 28px;
+    margin: 0; /* remove margem padrão do h1 */
+}
+
+
+/* =============================================
+   ABAS DE NAVEGAÇÃO
+   Estiliza os botões "Produtos" e "Vendas"
+============================================= */
+.nav-tabs .nav-link {
+    color: #2c3e50;     /* cor do texto da aba */
+    font-weight: bold;  /* texto em negrito */
+}
+
+/* Estilo da aba que está selecionada no momento */
+.nav-tabs .nav-link.active {
+    background-color: #2c3e50; /* fundo azul escuro quando ativa */
+    color: white;              /* texto branco quando ativa */
+    border-color: #2c3e50;     /* borda da mesma cor */
+}
+
+
+/* =============================================
+   CARDS DE PRODUTO
+   Cada produto cadastrado aparece num card
+   com nome, preço, estoque e botão de deletar
+============================================= */
+.card-produto {
+    background-color: white;
+    border-radius: 8px;                    /* bordas arredondadas */
+    padding: 15px;                         /* espaçamento interno */
+    margin-bottom: 15px;                   /* espaço entre os cards */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra suave */
+    display: flex;                         /* coloca os elementos lado a lado */
+    justify-content: space-between;        /* um à esquerda, outro à direita */
+    align-items: center;                   /* alinha verticalmente ao centro */
+}
+
+/* Nome do produto dentro do card */
+.card-produto .nome {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Preço do produto — em verde para destacar */
+.card-produto .preco {
+    color: #27ae60; /* verde */
+    font-size: 16px;
+}
+
+/* Informação de estoque — em cinza, menos destaque */
+.card-produto .estoque {
+    color: #7f8c8d; /* cinza médio */
+    font-size: 14px;
+}
+
+
+/* =============================================
+   CARDS DE VENDA
+   Cada venda no histórico aparece num card
+   com número da venda, data, hora e total
+============================================= */
+.card-venda {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Valor total da venda — em vermelho para destacar */
+.card-venda .total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c; /* vermelho */
+}
+
+
+/* =============================================
+   BOTÃO DELETAR
+   Botão vermelho personalizado para remover produtos
+   O Bootstrap não tem esse estilo específico,
+   por isso criamos o nosso
+============================================= */
+.btn-deletar {
+    background-color: #e74c3c; /* vermelho */
+    color: white;
+    border: none;              /* sem borda */
+    padding: 5px 12px;         /* espaçamento interno */
+    border-radius: 5px;        /* bordas arredondadas */
+    cursor: pointer;           /* muda o cursor para mãozinha ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse — fica vermelho mais escuro */
+.btn-deletar:hover {
+    background-color: #c0392b;
+}
+
+
+/* =============================================
+   MENSAGENS DE FEEDBACK
+   Aparecem após ações como cadastrar ou deletar
+   Somem automaticamente depois de 3 segundos
+   (o JavaScript controla o tempo)
+============================================= */
+.mensagem {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none; /* começa escondida — o JS mostra quando necessário */
+}
+
+/* Mensagem de sucesso — fundo verde claro */
+.mensagem.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Mensagem de erro — fundo vermelho claro */
+.mensagem.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+
+/* =============================================
+   SEÇÕES
+   Caixas brancas que agrupam conteúdo relacionado
+   Ex: "Cadastrar Produto" e "Produtos Cadastrados"
+   são seções separadas
+============================================= */
+.secao {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Título de cada seção com linha embaixo */
+.secao h4 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50; /* linha separadora abaixo do título */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
