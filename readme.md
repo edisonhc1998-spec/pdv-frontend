@@ -3,7 +3,6 @@
 Interface web desenvolvida em HTML, CSS e JavaScript puro para interagir com a API do PDV.
 
 ---
-
 ## Sobre o projeto
 
 Este é o front-end do sistema PDV (Ponto de Venda).
